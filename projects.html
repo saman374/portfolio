@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Saman</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">Saman Muskaan</div>
+      <nav class="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2>The Lab of Creations</h2>
+        <p style="color:var(--muted); margin-top:6px;">Below are hardware + software projects I built — each card explains both the electronics and the code.</p>
+
+        <div class="projects-grid" style="margin-top:20px;">
+
+          
+          <article class="project-card">
+            <img src="neera.jpg" height="200" width="300" alt="Neera Extraction System" class="project-image" />
+            <div class="title">Neera Extraction System</div>
+            <div class="desc">
+              A semi-automated neera collection and processing prototype that improves hygiene and collection efficiency.
+              <ul style="margin-top:8px; padding-left:18px;">
+                <li><strong>Hardware:</strong> Raspberry Pi Pico / Arduino Nano, peristaltic pump, level sensors, temperature sensor, stainless-steel collection chamber, relay module, 12V power supply, and simple mechanical holder for coconut inflorescence.</li>
+                <li><strong>Software:</strong> Embedded firmware to control pump cycles and read sensors; a Python/Flask dashboard (runs on local Pi) to view real-time levels, set collection schedules, and log yields.</li>
+              </ul>
+              Key features: timed extraction cycles, overflow protection, simple web UI for monitoring, and CSV export for yield tracking.
+            </div>
+            <a class="link" href="#" aria-label="Open Neera project">View Project</a>
+          </article>
+
+          <article class="project-card">
+           
+            <div class="title">Self-Watering Pots and Planters</div>
+            <img src="water.jpg" height="200" width="250" alt="Automatic Plant Watering System" class="project-image" />
+            <div class="desc">
+              A full-stack automatic watering system that waters plants based on soil moisture and schedule, with remote monitoring.
+              <ul style="margin-top:8px; padding-left:18px;">
+                <li><strong>Hardware:</strong> Arduino uno, 3v actuator, 5v water pump and motor controller, pipes, wires, jumpers, bread board</li>
+           
+              </ul>
+ 
+            </div>
+            <a class="link" href="#" aria-label="Open Plant Watering project">View Project</a>
+          </article>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© Saman Muskaan</div>
+  </footer>
+</body>
+</html>
